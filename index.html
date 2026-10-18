@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanet Simulation Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Stellar Horizon: Simulation Engine</h1>
+        <p class="subtitle">Real NASA Exoplanet Metrics & Stochastic Hazards</p>
+        
+        <div class="controls">
+            <button onclick="runSimulation('proxima')">Simulate Proxima Centauri b</button>
+            <button onclick="runSimulation('trappist')">Simulate TRAPPIST-1 e</button>
+        </div>
+
+        <div id="telemetry" class="telemetry-card" style="display: none;">
+            <h2 id="planet-name">Planet</h2>
+            <div class="grid">
+                <div class="metric"><strong>Distance:</strong> <span id="m-dist"></span> pc</div>
+                <div class="metric"><strong>Surface Gravity:</strong> <span id="m-grav"></span> g</div>
+                <div class="metric"><strong>Orbital Phase:</strong> <span id="m-period"></span> days</div>
+            </div>
+            
+            <h3>⚡ 10-Day Stochastic Survival Chance</h3>
+            <div class="progress-bar"><div id="survival-bar"></div></div>
+            <p id="survival-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
